@@ -110,6 +110,11 @@ i{
   transition: all 0.4s ease 0s; 
   text-align: left;
   line-height: 18px;
+
+}
+.feature_itemm{
+  position: relative;
+  overflow: hidden;
 }
   .feature_item h4 {
     font-size: 20px;
@@ -120,6 +125,17 @@ i{
     max-height: 300px;
     width: auto;
   }
+.feature_itemm .secondari_img{
+   position: absolute;
+   left: 10px;
+   top: 0px;
+   transition: .3s;
+   transform: translateX(-120%);
+}
+.feature_item:hover .secondari_img{
+   transform: translateX(0);
+   padding-right: 20px;
+}
 
 /*******product item hover************/
   .feature_item:hover {
@@ -159,7 +175,12 @@ i{
     text-transform: uppercase; 
   }
 }
-
+/*@media screen and (max-width: 1200px){
+  .feature_item .secondari_img{
+    width: 80%
+  }
+}
+*/
 
 
 
